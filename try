@@ -1,0 +1,28 @@
+this is submit button link
+
+<input type="submit" value="Submit">
+
+
+
+
+
+
+
+
+this is input css
+
+input[type="submit"]{
+    width: initial;
+    background-color: #000000;
+    color: #E9B73C;
+    font-weight: 300;
+    paddding: 1rem 2 rem;
+    border-radius: .8rem;
+    cursor: pointer;
+    transition: background-color 650ms;
+}
+
+input[type="submit"]:hover{
+    color: #221e3f;
+    background-color: #ffe838;
+}
