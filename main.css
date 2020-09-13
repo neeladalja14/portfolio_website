@@ -14,8 +14,17 @@ html{
 body{
     width: 100%;
     height: 100%;
-    background: url("images/back.jpg") no-repeat center fixed;
+    background: url("images/back31.jpg") no-repeat center fixed;
     background-size: cover;
+}
+
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
 }
 
 section{
@@ -29,8 +38,11 @@ a{
 }
 
 p{
-    font-size: 1.8rem;
+    font-family: "Comic Sans MS";
+    font-size: 2rem;
     font-weight: 300;
+    letter-spacing: 1.5px;
+    text-align: justify;
 }
 
 img{
@@ -133,6 +145,7 @@ li{
     font-family: 'Brush Script MT', sans-serif;
     font-size: 5rem;
     padding: 1rem;
+    letter-spacing: 4px;
 }
 
 .nav-link:hover,
@@ -166,7 +179,7 @@ li{
 }
 
 .bar{
-    background: linear-gradient(to right, #ffe838, #fd57bf);
+    background: linear-gradient(to right, #ffe838, #3477DB) ;
     width: 100%;
     height: 4px;
     border-radius: .8rem;
@@ -207,19 +220,22 @@ li{
 }
 
 .landing-text h1{
-    font-size: 20rem;
-    font-family: 'Brush Script MT', sans-serif;
-    background: linear-gradient(to top, #ffe838, #fd57bf);
+    font-size: 10rem;
+    font-family: 'Monoton', sans-serif;
+    background: linear-gradient(to top, #ffe838, #B50000);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     padding: 1rem;
     user-select: none;
+    letter-spacing: 25px;
 
 }
 
 .landing-text h6{
+    font-family: 'Papyrus', sans-serif;
     font-size: 2rem;
     font-weight: 300;
+    letter-spacing: 2px;
 }
 /* ending header */
 
@@ -268,12 +284,12 @@ li{
 
 }
 
-.fa-facebook-square:hover{
-    color: #4267b2;
+.fa-envelope-open:hover{
+    color: red;
 }
 
-.fa-linkedin-square:hover{
-    color:#ea4c89
+.fa-linkedin:hover{
+    color: #2f67cd;
 }
 
 .fa-twitter-square:hover{
@@ -305,11 +321,52 @@ li{
     margin: 2rem -2px 2rem 0;
 }
 
+
+
+
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    font-family: Castellar;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: lightgrey;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 110%;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent lightgrey transparent transparent;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+
+
+
 .icon-container\"{
     width: 10rem;
     height: 10rem;
     border: 3px solid #ffe838;
-    background-color: #fd57bf;
+    background-color: #3477DB;
     margin-bottom: 2rem;
     display: flex;
     transform: rotate(45deg);
@@ -378,7 +435,7 @@ li{
 .timeline ul{
     border-left: 4px solid #ffe838;
     border-radius: .8rem;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(243, 241, 239, 0.1);
     margin: 0 auto;
     position: relative;
     padding: 5rem;
@@ -426,7 +483,7 @@ li{
 
 .timeline .date::after{
     content: '';
-    box-shadow: 0 0 0 4px #fd57bf;
+    box-shadow: 0 0 0 4px #3477DB;
     border-radius: 100%;
     left: -8rem;
     height: 1.5rem;
@@ -439,7 +496,7 @@ li{
 
 /* start contact form */
 .contact{
-    background-color: #0F1E31;
+    background-color: #232323;
 }
 
 form{
@@ -562,7 +619,7 @@ textarea{
 .copyright{
     width: 100%;
     text-align: center;
-    background-color: #172d4a;
+    background-color: #000000;
     padding: 2rem 0;
     position: relative;
 }
