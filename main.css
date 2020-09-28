@@ -14,19 +14,9 @@ html{
 body{
     width: 100%;
     height: 100%;
-    background: url("images/back31.jpg") no-repeat center fixed;
+    background: url("images/background.jpg") no-repeat center fixed;
     background-size: cover;
     overflow-x: hidden;
-}
-
-
-#myVideo {
-    position: relative;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100vh;
-
 }
 
 section{
@@ -60,6 +50,30 @@ img{
     height: 100%;
     margin: 0 auto;
     position: relative;
+}
+
+.header-container{
+    width: 100%;
+    height: 900px;
+    border-left: none;
+    border-right: none;
+    position: relative;
+    padding: 20px;
+}
+.video-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+video{
+    position: absolute;
+    z-index: -1;
+    opacity: 0.78;
+    width: 100%;
 }
 
 .section-heading{
@@ -232,13 +246,14 @@ li{
 
 .landing-text h1{
     font-size: 15rem;
-    font-family: "The Historia Demo", sans-serif;
-    background: linear-gradient(to top, #ffe838, #B50000);
+    font-family: "The Historia Demo", "Brush Script MT",sans-serif;
+    background: linear-gradient(#ffe838, #B50000);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     padding: 1rem;
     user-select: none;
-    letter-spacing: 30px;
+    letter-spacing: 25px;
+    padding-bottom: 60px;
 
 }
 
@@ -247,6 +262,9 @@ li{
     font-size: 2rem;
     font-weight: 300;
     letter-spacing: 2px;
+    padding-bottom: 100px;
+    padding-top: -200px;
+    margin-top: 0;
 }
 /* ending header */
 
@@ -323,7 +341,7 @@ li{
 
 .popup {
     width:350px;
-    height:280px;
+    height:350px;
     padding:30px 20px;
     background:#f5f5f5;
     border-radius:10px;
@@ -357,7 +375,7 @@ li{
     font-size:30px;
     color:#34f234;
 }
-.popup .poptitle {
+.popup {
     margin:5px 0px;
     font-size:30px;
     font-weight:600;
@@ -537,7 +555,7 @@ li{
     font-size:30px;
     color:#34f234;
 }
-.mypopup2 .mypoptitle2 {
+.mypopup2 {
     margin:5px 0px;
     font-size:30px;
     font-weight:600;
@@ -1200,64 +1218,87 @@ textarea{
 
 @media screen and (max-width: 768px) {
 
-    /*[class*="col-"] {*/
-    /*    width: 100%;*/
-    /*}*/
-
-
-    body{
-        background: url("images/back31.jpg") no-repeat center fixed;
+    body {
+        background: url("images/background.jpg") no-repeat center fixed;
         background-size: cover;
         overflow-x: hidden;
-
     }
 
-    .landing-text h1{
+    .landing-text h1 {
         font-size: 15rem;
     }
 
-    .landing-text h6{
+
+    .landing-text h6 {
         font-size: 1.7rem;
     }
 
-    .nav-list{
+    .nav-list {
         width: 25%;
         flex-direction: column;
+        position: center;
+        margin-left: 35%;
     }
 
-    li{
+    li {
         margin: 2rem 0;
     }
 
-    .nav-link{
+    .nav-link {
         font-size: 4.5rem;
         overflow-x: hidden;
     }
 
-    .about-heading h1{
+    .about-heading h1 {
         font-size: 8rem;
     }
 
-    .section-heading h1{
+    .header-container {
+        border-left: none;
+        border-right: none;
+        position: relative;
+
+    }
+
+    .video-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 110%;
+        overflow: hidden;
+    }
+
+    video {
+        position: absolute;
+        z-index: -1;
+        opacity: 0.78;
+        width: 100%;
+        height: 894px;
+    }
+
+    .section-heading h1 {
         font-size: 3rem;
     }
 
-    .about-details .nav-list{
+    .about-details .nav-list {
         flex-direction: initial;
     }
 
-    .about-details li{
+    .about-details li {
         margin: 0 2rem;
     }
 
-    .icon-container\"{
-        width: 7rem;
-        height: 7rem;
+    .icon-container\" {
+        width: 6rem;
+        height: 6rem;
+
     }
 
-    .icon-container\" i{
-        font-size: 4rem;
+    .icon-container\" i {
+        font-size: 3rem;
     }
+
 
     .timeline ul{
         margin: 0 0 0 auto;
@@ -1267,9 +1308,18 @@ textarea{
         left: -20rem;
     }
 
-    .timeline .date::after{
+    .timeline .date::after {
         left: -5.9rem;
     }
+    .container{
+        width: 80%;
+        max-width: 120rem;
+        height: 100%;
+        margin: 0 auto;
+        position: relative;
+    }
+
+
 }
 
 

@@ -50,12 +50,10 @@ document.getElementById("mydismiss-popup-btn2").addEventListener("click",functio
     document.getElementsByClassName("mypopup2")[0].classList.remove("active");
 });
 
-
-
-document.getElementById("open-popup-btn3").addEventListener("click",function(){
-    document.getElementsByClassName("popup3")[0].classList.add("active");
+document.getElementById("itsopen-popup-btn").addEventListener("click",function(){
+    document.getElementsByClassName("itspopup")[0].classList.add("active");
 });
 
-document.getElementById("dismiss-popup-btn3").addEventListener("click",function(){
-    document.getElementsByClassName("popup3")[0].classList.remove("active");
+document.getElementById("itsdismiss-popup-btn").addEventListener("click",function(){
+    document.getElementsByClassName("itspopup")[0].classList.remove("active");
 });
