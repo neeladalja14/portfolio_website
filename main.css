@@ -322,8 +322,8 @@ li{
     color: #2f67cd;
 }
 
-.fa-twitter-square:hover{
-    color: #00bfff;
+.fa-github:hover{
+    color: #ffe838;
 }
 /* ending about */
 
@@ -538,6 +538,11 @@ li{
     border: none;
 }
 
+.modal-open:hover{
+    background: #ffe838;
+    color: black;
+}
+
 .modal{
     position: fixed;
     top: 0;
@@ -604,6 +609,12 @@ li{
     color: white;
     background: red;
  }
+
+.modal-close:hover{
+    background: black;
+    color: white;
+}
+
 .resume{
     font-family: Monoton, sans-serif;
     color: blue;
@@ -697,15 +708,270 @@ li{
     color: #3883ff;
 }
 
-.portfolio-description .cta:hover{
-    color: #2f67cd;
+/*.portfolio-description .cta:hover{*/
+/*    color: #2f67cd;*/
+/*}*/
+/* View Details button no. 1 */
+#submitx{
+    position: relative;
+    display: inline-block;
+    padding: 15px 40px;
+    color: #3883ff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: 15px;
+    overflow: hidden;
+    transition: 0.2s;
 }
+
+#submitx:hover{
+    color: #255784;
+    background: #E9B73C;
+    box-shadow: 0 0 10px #E9B73C, 0 0 40px #E9B73C, 0 0 80px #E9B73C;
+    transition-delay: 1s;
+}
+
+#submitx span{
+    position: absolute;
+    display: block;
+}
+
+#submitx span:nth-child(1){
+    top:0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #E9B73C);
+}
+
+#submitx:hover span:nth-child(1){
+    left: 100%;
+    transition: 1s;
+}
+
+
+#submitx span:nth-child(3){
+    bottom:0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #E9B73C);
+}
+
+#submitx:hover span:nth-child(3){
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+
+
+#submitx span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #E9B73C);
+}
+
+#submitx:hover span:nth-child(2){
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+
+#submitx span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #E9B73C);
+}
+
+#submitx:hover span:nth-child(4){
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.755s;
+}
+/* view details button 2. */
+
+#submity{
+    position: relative;
+    display: inline-block;
+    padding: 15px 40px;
+    color: #3883ff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: 15px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+#submity:hover{
+    color: #255784;
+    background: #E9B73C;
+    box-shadow: 0 0 10px #E9B73C, 0 0 40px #E9B73C, 0 0 80px #E9B73C;
+    transition-delay: 1s;
+}
+
+#submity span{
+    position: absolute;
+    display: block;
+}
+
+#submity span:nth-child(1){
+    top:0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #E9B73C);
+}
+
+#submity:hover span:nth-child(1){
+    left: 100%;
+    transition: 1s;
+}
+
+
+#submity span:nth-child(3){
+    bottom:0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #E9B73C);
+}
+
+#submity:hover span:nth-child(3){
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+
+
+#submity span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #E9B73C);
+}
+
+#submity:hover span:nth-child(2){
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+
+#submity span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #E9B73C);
+}
+
+#submity:hover span:nth-child(4){
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.755s;
+}
+
+/* view details button 3. */
+
+#submitz{
+    position: relative;
+    display: inline-block;
+    padding: 15px 40px;
+    color: #3883ff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: 15px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+#submitz:hover{
+    color: #255784;
+    background: #E9B73C;
+    box-shadow: 0 0 10px #E9B73C, 0 0 40px #E9B73C, 0 0 80px #E9B73C;
+    transition-delay: 1s;
+}
+
+#submitz span{
+    position: absolute;
+    display: block;
+}
+
+#submitz span:nth-child(1){
+    top:0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #E9B73C);
+}
+
+#submitz:hover span:nth-child(1){
+    left: 100%;
+    transition: 1s;
+}
+
+
+#submitz span:nth-child(3){
+    bottom:0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #E9B73C);
+}
+
+#submitz:hover span:nth-child(3){
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+
+
+#submitz span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #E9B73C);
+}
+
+#submitz:hover span:nth-child(2){
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+
+#submitz span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #E9B73C);
+}
+
+#submitz:hover span:nth-child(4){
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.755s;
+}
+
+
+
 
 /* ending portfolio */
 
 
 
-/* sr=tart timeline */
+/* starts timeline */
 .timeline ul{
     border-left: 4px solid #ffe838;
     border-radius: .8rem;
